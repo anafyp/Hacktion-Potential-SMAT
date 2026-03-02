@@ -12,10 +12,12 @@ The main script for this is [`online_windowing.py`](online_windowing.py).
 ## Project Layout
 
 - `online_windowing.py`: online LSL windowing + model inference + optional UDP send
+- `lsl_connect.py`: full-featured EEG bridge with recording, diagnostics, and game control
 - `model_Data28_BIS.pkl`: CSP+LDA model used for prediction
 - `test_lda.py`: smoke test for model loading/prediction
 - `fake_lsl_eeg.py`: fake EEG LSL stream generator for testing
-- `Hacktion_game-main/`: final game version (UDP receiver listens on `127.0.0.1:5005`)
+- `Hacktion_game-main/`: game with BCI integration (UDP receiver on `127.0.0.1:5005`)
+- `RECORDING_FIX.md`: troubleshooting guide for EDF recording issues
 
 ## Install
 
